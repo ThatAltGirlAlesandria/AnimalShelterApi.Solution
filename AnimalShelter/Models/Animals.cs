@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace AnimalShelterApi.Models
+namespace AnimalShelter.Models
 {
-  public class Animals
+  public class Animal
   {
     public int AnimalId { get; set; }
     [Required]

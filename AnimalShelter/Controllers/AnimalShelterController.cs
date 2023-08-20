@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AnimalShelter.Models;
@@ -10,7 +9,7 @@ namespace AnimalShelter.Controllers
   public class AnimalsController : ControllerBase
   {
     private readonly AnimalShelterContext _db;
-    public AnimalsController(AnimalShelterContext db)
+    public AnimalsController(AnimalShelterContext db);
   }
   {
     _db = db;
