@@ -6,13 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<AnimalShelterContext>(
-                  dbContextOptions => dbContextOptions
+                dbContextOptions => dbContextOptions
                     .UseMySql(
-                      builder.Configuration["ConnectionStrings:DefaultConnection"],
-                      ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
+                    builder.Configuration["ConnectionStrings:DefaultConnection"],
+                    ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
                     )
-                  )
-                );
+                )
+            );
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

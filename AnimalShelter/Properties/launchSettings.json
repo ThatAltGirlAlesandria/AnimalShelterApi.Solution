@@ -1,20 +1,20 @@
-{
+﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:38964",
-      "sslPort": 44331
+      "applicationUrl": "http://localhost:5957",
+      "sslPort": 44332
     }
   },
   "profiles": {
-    "AnimalShelterApi": {
+    "AnimalShelter": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "applicationUrl": "https://localhost:7003;http://localhost:5234",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
