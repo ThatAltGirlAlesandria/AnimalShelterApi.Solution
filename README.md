@@ -135,8 +135,7 @@ A console app that allows users to search local animal shelters for current adop
 
 ## **Known Bugs**
 
-- Not migrating correctly.
-- Cannot call in Swagger due to this.
+- I have not implemented a further exploration yet.
 
 ## License
 
