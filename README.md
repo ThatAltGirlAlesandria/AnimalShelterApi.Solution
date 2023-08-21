@@ -99,6 +99,8 @@ A console app that allows users to search local animal shelters for current adop
 <br>
 <span style="color: green; font-style: italic;">POST</span> /api/
 <br>
+<span style="color: rgb(3, 132, 252);">GET</span> /api/
+<br>
 <span style="color: orange; font-style: italic;">PUT</span> /api/
 <br>
 <span style="color: red; font-style: italic;">DELETE</span> /api/
