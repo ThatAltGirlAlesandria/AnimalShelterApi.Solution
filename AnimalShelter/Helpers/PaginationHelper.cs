@@ -5,7 +5,7 @@ namespace AnimalShelter.Helpers
 {
   public class PaginationHelper
   {
-    public static PagedResponse<List<T>> CreatePagedReponse<T>(
+    public static PagedResponse<List<T>> CreatePagedResponse<T>(
         List<T> pagedData,
         PaginationFilter validFilter,
         int totalRecords,

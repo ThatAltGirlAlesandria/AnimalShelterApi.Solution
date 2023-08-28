@@ -103,15 +103,15 @@ This project uses [Swashbuckle](https://docs.microsoft.com/en-us/aspnet/core/tut
 ## Endpoints
 <details>
 <summary>Endpoints</summary>
-  <span style="color: rgb(3, 132, 252); font-style: italic;">GET</span> /api/Animals
+  <span style="font-style: italic;">GET</span> /api/Animals
   <br>
-  <span style="color: green; font-style: italic;">POST</span> /api/Animals
+  <span style="font-style: italic;">POST</span> /api/Animals
   <br>
-  <span style="color: rgb(3, 132, 252);">GET</span> /api/Animals/{id}
+  <span style="font-style: italic;">GET</span> /api/Animals/{id}
   <br>
-  <span style="color: orange; font-style: italic;">PUT</span> /api/Animals/{id}
+  <span style="font-style: italic;">PUT</span> /api/Animals/{id}
   <br>
-  <span style="color: red; font-style: italic;">DELETE</span> /api/Animals/{id}
+  <span style="font-style: italic;">DELETE</span> /api/Animals/{id}
   <br>
 </details>
 
