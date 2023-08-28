@@ -95,7 +95,6 @@ namespace AnimalShelter.Controllers
         }
         _db.Animals.Remove(animal);
         await _db.SaveChangesAsync();
-
         return NoContent();
     }
   }

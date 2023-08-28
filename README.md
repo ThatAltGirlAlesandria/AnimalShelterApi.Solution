@@ -24,7 +24,9 @@
 - learhowtoprogram.com
 - Command Line
 
+
 ## **Description**
+<hr >
 
 A console app that allows users to search local animal shelters for current adoptee's using API calls.
 
@@ -75,10 +77,6 @@ A console app that allows users to search local animal shelters for current adop
   ```
 
   ```bash
-  $ dotnet ef migrations add Initial
-  ```
-
-  ```bash
   $ dotnet ef database update
   ```
 
@@ -91,20 +89,53 @@ A console app that allows users to search local animal shelters for current adop
 - A web page will automatically open in your browser at port 5000 or 5001
 </details>
 
-## API
 
+## API Documentation:
+<hr >
+
+## Swagger
+
+This project uses [Swashbuckle](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-6.0&tabs=visual-studio) to generate Swagger documentation for the API. After building and running the API you can view that documentation by visiting `http://localhost:5000/swagger`.
+
+**Please note** that there are two versions of the API available, and to view the documentation for v2.0 please select it from the drop down list in the top right corner.
+
+<details>
 <summary>Endpoints</summary>
+  <span style="color: rgb(3, 132, 252); font-style: italic;">GET</span> /api/Animals
+  <br>
+  <span style="color: green; font-style: italic;">POST</span> /api/Animals
+  <br>
+  <span style="color: rgb(3, 132, 252);">GET</span> /api/Animals/{id}
+  <br>
+  <span style="color: orange; font-style: italic;">PUT</span> /api/Animals/{id}
+  <br>
+  <span style="color: red; font-style: italic;">DELETE</span> /api/Animals/{id}
+  <br>
+</details>
 
-<span style="color: rgb(3, 132, 252); font-style: italic;">GET</span> /api/Animals
-<br>
-<span style="color: green; font-style: italic;">POST</span> /api/Animals
-<br>
-<span style="color: rgb(3, 132, 252);">GET</span> /api/Animals/{id}
-<br>
-<span style="color: orange; font-style: italic;">PUT</span> /api/Animals/{id}
-<br>
-<span style="color: red; font-style: italic;">DELETE</span> /api/Animals/{id}
-<br>
+## HTTP Request Structure
+- A good GET request will receive a "200 ok" status. This means that it was a success.
+- However, when requesting a POST query you will receive a "201" code to signify it was a success.
+-If you receive a 400 or 404 it indicates that the request is bad. Make sure your spelling is correct and written correctly.
+
+## Example Api Query
+
+```
+https://localhost:5001/api/Animals
+```
+
+## Response Example
+
+```
+{
+  "AnimalId" : 1,
+  "AnimalType" : "Dog",
+  "AnimalName" : "Trash",
+  "MaleFemale" : "Female",
+  "AnimalDescription" : "They were found dumpster diving.",
+  "AnimalAge" : 3
+}
+```
 
 ## Debugging
 
@@ -135,9 +166,26 @@ A console app that allows users to search local animal shelters for current adop
   </code></pre>
 </details>
 
-## **Known Bugs**
+## Pagination
 
-- I have not implemented a further exploration yet.
+As part of the requirements for this project, I had to implement another feature of my choosing after finishing the initial requirements. While I initially attempted versioning, it wasn't working for me so I decided to switch to Pagination.
+
+<details>
+  _pageSize={int}_
+  - Sets page size for returned values, only applicable to /api/Animals` as it returns a list.
+  - Defaults to 10, with a maximum value of 10.
+  <br<>
+  _pageNumber={int}_
+  - Returns the values located in that page.
+  - EX: 100 total animals, a pageNumber of 2 will return
+  the animals located in rows 11 to 20.
+  - Defaults to 1.
+</details>
+
+## **Known Bugs**
+<hr >
+
+- None know, if any found please contact me at <thataltgirlalesandria@gmail.com>
 
 ## License
 
