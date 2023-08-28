@@ -99,6 +99,8 @@ This project uses [Swashbuckle](https://docs.microsoft.com/en-us/aspnet/core/tut
 
 **Please note** that there are two versions of the API available, and to view the documentation for v2.0 please select it from the drop down list in the top right corner.
 
+
+##Endpoints
 <details>
 <summary>Endpoints</summary>
   <span style="color: rgb(3, 132, 252); font-style: italic;">GET</span> /api/Animals
